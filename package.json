@@ -1,0 +1,30 @@
+{
+  "name": "cs372-web-demo",
+  "version": "1.0.0",
+  "description": "An important web demo for CS372",
+  "main": "myDemoServer.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WickerBaskett/CS372-Web-Demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WickerBaskett/CS372-Web-Demo/issues"
+  },
+  "homepage": "https://github.com/WickerBaskett/CS372-Web-Demo#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "mongodb": "^6.13.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.19.0"
+  }
+}

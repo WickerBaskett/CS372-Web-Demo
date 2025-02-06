@@ -1,16 +1,10 @@
 <html>
 	<body>
-	<form>
-		<br>
-		<br>
-		<label>Enter Text Here:</label><input type="text">
-		<br>
-		<br>
-		<div>
-			<a><input type="button" value="Submit"></a>
-			<a><input type="button" value="Display"></a>
-		</div>
-	</form>
+		<form action="http://localhost:6543/insert" method="GET">
+			<p>Enter Text Here:</p>
+			<input type="text" name="db_input"></input>
+			<input type="submit">
+		</form>
+		<input type="button" value="Display">
 	</body>
-	
 </html>
