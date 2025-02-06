@@ -5,6 +5,21 @@
 			<input type="text" name="db_input"></input>
 			<input type="submit">
 		</form>
-		<input type="button" value="Display">
+		<input type="button" value="Display" onclick="db_request()">
+		<span id="dbDisplay"> The database will display here! </span>
 	</body>
+	<script>
+		function db_request() {
+			fetch('/retrieve')
+				.then((result) => result.json())
+				.then((data => {
+					for (const obj in data) {
+						document.getElementById('dbDisplay').innerHTML = JSON.stringify(data);
+					}
+					
+				}
+			));
+				
+		};
+	</script>
 </html>
