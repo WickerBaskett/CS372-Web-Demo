@@ -22,7 +22,8 @@
     "express": "^4.21.2",
     "http": "^0.0.1-security",
     "mongodb": "^6.13.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "eslint": "^9.19.0"

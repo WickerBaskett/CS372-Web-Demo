@@ -8,14 +8,17 @@ const app = express();
 const port = 6543;
 
 app.use(express.static(path.join(__dirname, "")));
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "", 'myDemoWebpage.html'));
 });
+const util = require('util');
 
-app.get("/insert", (req, res) => {
-    console.log("Request Recieved: " + req.query.db_input);
-    mongo_insert(req.query.db_input).catch(console.dir);
+app.post("/insert", (req, res) => {
+    //console.log("Request Recieved: " + req.body);
+    console.log(`post/${util.inspect(req.body,false,null)}`);
+    mongo_insert(req.body.db_input).catch(console.dir);
 })
 
 app.listen(port, () => {
